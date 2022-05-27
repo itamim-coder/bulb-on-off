@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb On Off</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="light">
+      <div class="bulb"></div>
+    </div>
+    <script>
+      let bulb = document.querySelector('.bulb');
+      let body = document.querySelector('body');
+
+      bulb.onclick = function(){
+       
+        body.classList.toggle('on');
+      };
+    </script>
+  </body>
+</html>
